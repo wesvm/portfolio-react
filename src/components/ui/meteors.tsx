@@ -12,20 +12,21 @@ export const Meteors = ({ number = 20 }: MeteorsProps) => {
 		animationDelay: string;
 		animationDuration: string;
 	}>>([]);
-	const ref = useRef(null)
+	const ref = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
-		// get height of container using ref
-		const height = ref.current.clientHeight
+		if (ref.current) {
+			const height = ref.current.clientHeight
 
-		const styles = [...new Array(number)].map(() => ({
-			top: Math.floor(Math.random() * height) + 'px',
-			left: Math.floor(Math.random() * window.innerWidth) + 'px',
-			animationDelay: Math.random() * 1 + 0.2 + 's',
-			animationDuration: Math.floor(Math.random() * 8 + 2) + 's'
-		}))
+			const styles = [...new Array(number)].map(() => ({
+				top: Math.floor(Math.random() * height) + 'px',
+				left: Math.floor(Math.random() * window.innerWidth) + 'px',
+				animationDelay: Math.random() * 1 + 0.2 + 's',
+				animationDuration: Math.floor(Math.random() * 8 + 2) + 's'
+			}))
 
-		setMeteorStyles(styles)
+			setMeteorStyles(styles)
+		}
 	}, [number])
 
 	return (
