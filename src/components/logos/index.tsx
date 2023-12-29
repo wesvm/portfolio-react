@@ -1,0 +1,13 @@
+export { default as AngularLogo } from './angular-logo';
+export { default as CSSLogo } from './css-logo';
+export { default as HTMLLogo } from './html-logo';
+export { default as JavaLogo } from './java-logo'
+export { default as JavaScriptLogo } from './javascript-logo';
+export { default as LaravelLogo } from './laravel-logo';
+export { default as PHPLogo } from './php-logo';
+export { default as ReactLogo } from './react-logo';
+export { default as SpringBootLogo } from './spring-boot-logo';
+export { default as TailwindCSSLogo } from './tailwind-css';
+export { default as TypeScriptLogo } from './typescript-logo';
+export { default as MySQLLogo } from './mysql-logo';
+export { default as NextJSLogo } from './nextjs-logo';

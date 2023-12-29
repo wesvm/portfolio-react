@@ -1,7 +1,10 @@
-import { Navbar } from "@/components/navbar"
-import { Home } from "@/components/page"
-import { Background } from "@/components/background"
-import { Meteors } from "@/components/meteors"
+import { Background } from "@/components/ui/background"
+import { Meteors } from "@/components/ui/meteors"
+
+import { Bio } from "./components/bio"
+import { Projects } from "./components/projects"
+import { Skills } from "./components/skills"
+import { Contact } from "./components/contact"
 
 function App() {
 
@@ -10,12 +13,14 @@ function App() {
       <Background />
       <Meteors />
 
-      <header className="mx-auto max-w-3xl sticky top-0 z-10">
-        <Navbar />
-      </header>
-
-      <main className="max-w-3xl mx-auto px-4 my-4">
-        <Home />
+      <main className="max-w-3xl mx-auto px-4 md:px-0 my-8 flex flex-col gap-14">
+        <Bio />
+        <hr className="border-gray-600" />
+        <Projects />
+        <Skills />
+        <footer className="mb-4">
+          <Contact />
+        </footer>
       </main>
     </>
   )

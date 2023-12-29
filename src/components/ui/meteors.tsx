@@ -34,7 +34,6 @@ export const Meteors = ({ number = 20 }: MeteorsProps) => {
 			className='absolute overflow-hidden inset-0 w-full h-full animate-fade animate-once animate-duration-1000 z-[-1]'
 		>
 			{[...meteorStyles].map((style, idx) => (
-				// Meteor Head
 				<span
 					key={idx}
 					className={clsx(
@@ -42,7 +41,6 @@ export const Meteors = ({ number = 20 }: MeteorsProps) => {
 					)}
 					style={style}
 				>
-					{/* Meteor Tail */}
 					<div className='pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[50px] -translate-y-1/2 bg-gradient-to-r from-slate-500 to-transparent' />
 				</span>
 			))}
