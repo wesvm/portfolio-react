@@ -2,7 +2,7 @@ import { Background } from "@/components/ui/background"
 import { Meteors } from "@/components/ui/meteors"
 
 import { Bio } from "./components/bio"
-import { Projects } from "./components/projects"
+import { Projects } from "./components/proyects"
 import { Skills } from "./components/skills"
 import { Contact } from "./components/contact"
 
