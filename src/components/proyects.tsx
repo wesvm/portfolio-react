@@ -50,7 +50,7 @@ const other: iProyectInfo[] = [
         "title": "Mi Portfolio",
         "description": "Portfolio desarrollado en react.",
         "tags": [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWINDCSS],
-        "github": "https://github.com/wesvm/helpdesk-laravel"
+        "github": "https://github.com/wesvm/portfolio-react"
     },
 ]
 
