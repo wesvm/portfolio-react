@@ -17,7 +17,7 @@ export const Bio = () => {
                     >
                         <GithubIcon className="w-8 h-8" />
                     </a>
-                    <a href="https://drive.google.com/file/d/1il2zuBMWGKqu7hcv_uqkW81gi45Enc97/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+                    <a href="https://drive.google.com/file/d/1dGEXMzwQL1pa3jhh8fCDYbx5HDEFlJuf/view?usp=sharing" rel="noopener noreferrer" target="_blank">
                         <Button text="Descargar CV" />
                     </a>
                 </div>
